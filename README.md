@@ -12,7 +12,6 @@ Demo of ag-Grid integration into a JavaScript project
 ag-Grid is a fully-featured and highly customizable JavaScript data grid.
 It delivers [outstanding performance](https://www.ag-grid.com/example.php), has no 3rd party dependencies and [integrates smoothly with all major JavaScript frameworks](https://www.ag-grid.com/javascript-grid-getting-started). Here's how our grid looks like with multiple filters and grouping enabled:
 
-![alt text](./github-grid-demo.jpg "Logo Title Text 1")
 
 
 Features
