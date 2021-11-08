@@ -1,13 +1,17 @@
-# Javascript data grid Examples
 
-JavaScript Data Grid Examples used on the blog.
+![alt text](./github-banner.png "Logo Title Text 1")
 
-https://blog.ag-grid.com/tag/javascript/
+[![CDNJS](https://img.shields.io/cdnjs/v/ag-grid.svg)](https://cdnjs.com/libraries/ag-grid)
+[![npm](https://img.shields.io/npm/dm/ag-grid.svg)](https://www.npmjs.com/package/ag-grid)
+[![npm](https://img.shields.io/npm/dt/ag-grid.svg)](https://www.npmjs.com/package/ag-grid)
 
-Demo of ag-Grid integration into a JavaScript project
+Demo of JavaScript Grid Component customization with custom filtering logic, cell renderer and cell editor
 ------
 
 [Get started in 5 minutes](https://blog.ag-grid.com/get-started-with-javascript-grid-in-5-minutes/)
+
+[Associated Blog Post for this code customize javascript grid in less than 10 minutes](https://blog.ag-grid.com/learn-to-customize-javascript-grid-in-less-than-10-minutes/)
+
 
 ag-Grid is a fully-featured and highly customizable JavaScript data grid.
 It delivers [outstanding performance](https://www.ag-grid.com/example.php), has no 3rd party dependencies and [integrates smoothly with all major JavaScript frameworks](https://www.ag-grid.com/javascript-grid-getting-started). Here's how our grid looks like with multiple filters and grouping enabled:
@@ -81,16 +85,16 @@ Usage Overview
 ### Set configuration
 
     const gridOptions = {
-    	columnDefs: [
-    		{headerName: 'Make', field: 'make'},
-    		{headerName: 'Model', field: 'model'},
-    		{headerName: 'Price', field: 'price'}
-    	],
-    	rowData: [
-    		{make: 'Toyota', model: 'Celica', price: 35000},
-    		{make: 'Ford', model: 'Mondeo', price: 32000},
-    		{make: 'Porsche', model: 'Boxter', price: 72000}
-    	]
+        columnDefs: [
+            {headerName: 'Make', field: 'make'},
+            {headerName: 'Model', field: 'model'},
+            {headerName: 'Price', field: 'price'}
+        ],
+        rowData: [
+            {make: 'Toyota', model: 'Celica', price: 35000},
+            {make: 'Ford', model: 'Mondeo', price: 32000},
+            {make: 'Porsche', model: 'Boxter', price: 72000}
+        ]
     };
 
 ### Initialize the grid

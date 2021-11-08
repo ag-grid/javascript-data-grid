@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/ag-grid/dist/ag-grid.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid/dist/styles/ag-theme-balham.css">
+</head>
+<body>
+<h1>Hello from ag-grid!</h1>
+<div id="myGrid" style="height: 500px; width:500px;" class="ag-theme-balham"></div>
+
+<script type="text/javascript" charset="utf-8">
+
+    const columnDefs = [
+        {headerName: 'Make', field: 'make'},
+        {headerName: 'Model', field: 'model'},
+        {headerName: 'Price', field: 'price'}
+    ];
+
+    const gridOptions = {
+        columnDefs: columnDefs,
+        enableSorting: true,
+        enableFilter: true
+    };
+
+    const eGridDiv = document.querySelector('#myGrid');
+
+    new agGrid.Grid(eGridDiv, gridOptions);
+
+    fetch('https://api.myjson.com/bins/15psn9').then(function (response) {
+        return response.json();
+    }).then(function (data) {
+        gridOptions.api.setRowData(data);
+    })
+
+</script>
+</body>
+</html>
