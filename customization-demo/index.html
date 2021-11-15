@@ -43,7 +43,7 @@
 
     new agGrid.Grid(eGridDiv, gridOptions);
 
-    fetch('https://api.myjson.com/bins/15psn9').then(function (response) {
+    fetch('https://www.ag-grid.com/example-assets/row-data.json').then(function (response) {
         return response.json();
     }).then(function (data) {
         gridOptions.api.setRowData(data);

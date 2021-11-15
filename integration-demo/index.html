@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://unpkg.com/ag-grid/dist/ag-grid.min.noStyle.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/ag-grid/dist/styles/ag-grid.css">
-    <link rel="stylesheet" href="https://unpkg.com/ag-grid/dist/styles/ag-theme-balham.css">
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-balham.css">
 </head>
 <body>
 <h1>Hello from ag-grid!</h1>
@@ -14,20 +14,21 @@
     const columnDefs = [
         {headerName: 'Make', field: 'make'},
         {headerName: 'Model', field: 'model'},
-        {headerName: 'Price', field: 'price'}
+        {headerName: 'Price', field: 'price', editable: true}
     ];
 
     const gridOptions = {
         columnDefs: columnDefs,
         enableSorting: true,
-        enableFilter: true
+        enableFilter: true,
+        pagination: true
     };
 
     const eGridDiv = document.querySelector('#myGrid');
 
     new agGrid.Grid(eGridDiv, gridOptions);
 
-    fetch('https://api.myjson.com/bins/15psn9').then(function (response) {
+    fetch('https://www.ag-grid.com/example-assets/row-data.json').then(function (response) {
         return response.json();
     }).then(function (data) {
         gridOptions.api.setRowData(data);
