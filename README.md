@@ -7,7 +7,9 @@ https://blog.ag-grid.com/tag/javascript/
 Demo of ag-Grid integration into a JavaScript project
 ------
 
-[Get started in 5 minutes](https://blog.ag-grid.com/get-started-with-javascript-grid-in-5-minutes/)
+- [Get started in 5 minutes](https://blog.ag-grid.com/get-started-with-javascript-grid-in-5-minutes/)
+    - [Run the code on Plunker](https://plnkr.co/plunk/qEhnUluvHjCRCfHT)
+- [Customising the JavaScript Grid](https://blog.ag-grid.com/learn-to-customize-javascript-grid-in-less-than-10-minutes/)
 
 ag-Grid is a fully-featured and highly customizable JavaScript data grid.
 It delivers [outstanding performance](https://www.ag-grid.com/example.php), has no 3rd party dependencies and [integrates smoothly with all major JavaScript frameworks](https://www.ag-grid.com/javascript-grid-getting-started). Here's how our grid looks like with multiple filters and grouping enabled:
@@ -56,46 +58,62 @@ Looking for a framework specific solution?
 * [Get Started with Angular](https://www.ag-grid.com/angular-getting-started)
 * [Get Started with React](https://www.ag-grid.com/react-getting-started)
 * [Get Started with Vue](https://www.ag-grid.com/vue-getting-started)
-* [Get Started with WebComponents](https://www.ag-grid.com/best-web-component-data-grid)
+
 
 Usage Overview
 --------------
 
-#### Install dependencies
-
-    $ npm i --save ag-grid
-
 ### Add a placeholder to HTML
 
-    <div id="myGrid" style="height: 150px;width: 600px" class="ag-theme-balham"></div>
+```
+    <div id="myGrid" style="height: 500px; width:500px;" class="ag-theme-balham"></div>
+```
 
 
 #### Import the grid and styles
 
-    import {Grid} from "ag-grid/main";
-
-    import "ag-grid/dist/styles/ag-grid.css";
-    import "ag-grid/dist/styles/ag-theme-balham.css";
+```
+<head>
+    <script src="https://unpkg.com/ag-grid/dist/ag-grid.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid/dist/styles/ag-theme-balham.css">
+</head>
+```
 
 ### Set configuration
 
-    const gridOptions = {
-    	columnDefs: [
-    		{headerName: 'Make', field: 'make'},
-    		{headerName: 'Model', field: 'model'},
-    		{headerName: 'Price', field: 'price'}
-    	],
-    	rowData: [
-    		{make: 'Toyota', model: 'Celica', price: 35000},
-    		{make: 'Ford', model: 'Mondeo', price: 32000},
-    		{make: 'Porsche', model: 'Boxter', price: 72000}
-    	]
+```
+    const columnDefs = [
+        {headerName: 'Make', field: 'make'},
+        {headerName: 'Model', field: 'model'},
+        {
+            headerName: 'Price',
+            field: 'price',
+            editable: true,
+            cellRenderer: 'numberCellFormatter',
+            cellEditor: 'numericCellEditor',
+            filter: 'rangeFilter',
+        }
+    ];
+
+	const gridOptions = {
+        columnDefs: columnDefs,
+        enableSorting: true,
+        enableFilter: true,
+        components: {
+            numberCellFormatter: NumberCellFormatter,
+            numericCellEditor: NumericCellEditor,
+            rangeFilter: RangeFilter
+        }
     };
+```
 
 ### Initialize the grid
 
-    let eGridDiv = document.querySelector('#myGrid');
-    new Grid(eGridDiv, this.gridOptions);
+```
+    const eGridDiv = document.querySelector('#myGrid');
+    new agGrid.Grid(eGridDiv, gridOptions);
+```
 
 For more information on how to integrate the grid into your project see [TypeScript - Building with Webpack 2](https://www.ag-grid.com/ag-grid-typescript-webpack-2).
 
