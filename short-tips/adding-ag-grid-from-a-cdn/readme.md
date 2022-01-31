@@ -73,7 +73,7 @@ CdnJS takes a slightly different approach to version naming so it is worth check
 <html lang="en">
 <head>
     <title>CDN Added AG Grid Example</title>
-    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.js"></script>
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.nostyle.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
     <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
 </head>
@@ -112,3 +112,19 @@ document.addEventListener('DOMContentLoaded', () => {
 </body>
 </html>
 ```
+
+### One Import
+
+In the above example I imported three separate files to make it clear the dependencies we are importing:
+
+- the JavaScript to make the grid work
+- the CSS to structure the grid
+- the CSS to style the grid
+
+We also release a single dependency which has all of these bundled together:
+
+```html
+<script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.js"></script>
+```
+
+And if we import this, then the structural CSS and theme CSS are brought in as well.
