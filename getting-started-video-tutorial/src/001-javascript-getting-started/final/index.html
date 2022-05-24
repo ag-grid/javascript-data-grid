@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Ag Grid App</title>
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css"
+    />
+  </head>
+  <body>
+    <h1>Hello from Ag Grid</h1>
+    <button onclick="deselect()">Deselect Rows</button>
+    <div
+      id="myGrid"
+      class="ag-theme-alpine"
+      style="height: 500px"
+    ></div>
+    <script type="text/javascript">
+        function deselect(){
+            gridOptions.api.deselectAll()
+        }
+      const eGridDiv = document.getElementById("myGrid");
+      const gridOptions = {
+        columnDefs: [
+          { field: "make",  },
+          { field: "model",  },
+          { field: "price",  },
+        ],
+        defaultColDef: {sortable: true, filter: true},
+        rowData: [
+          {
+            make: "Vauxhall",
+            model: "Corsa",
+            price: 17300,
+          },
+          { make: "Ford", model: "Fiesta", price: 18000 },
+          {
+            make: "Volkswagen",
+            model: "Golf",
+            price: 26000,
+          },
+        ],
+        rowSelection:'multiple',
+        animateRows: true,
+        onCellClicked: params => {
+            console.log('cell was clicked', params)
+        }
+      };
+      new agGrid.Grid(eGridDiv, gridOptions);
+      fetch(
+        "https://www.ag-grid.com/example-assets/row-data.json"
+      )
+        .then(response => response.json())
+        .then(data => {
+          gridOptions.api.setRowData(data);
+        });
+    </script>
+  </body>
+</html>
