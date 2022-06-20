@@ -11,10 +11,30 @@ Demo of ag-Grid integration into a JavaScript project
     - [Run the code on Plunker](https://plnkr.co/plunk/qEhnUluvHjCRCfHT)
 - [Customising the JavaScript Grid](https://blog.ag-grid.com/learn-to-customize-javascript-grid-in-less-than-10-minutes/)
 
+
+## Getting Started Video Tutorial Series
+
+Videos in this Series
+
+- 01 - Community Getting Started
+    - https://youtu.be/V14w_NFuZB4
+- 02 - Enterprise Getting Started
+    - https://youtu.be/EIkxDliHFYw
+- 03 - Javascript Cell Renderers
+    - https://youtu.be/NwLVitYQ9c4
+- 04 - Javascript Column Filters
+    - https://youtu.be/haGW168Mfog
+
+Source code is available on Github:
+
+- https://github.com/ag-grid/javascript-data-grid/tree/main/getting-started-video-tutorial
+
+## What is AG Grid?
+
 ag-Grid is a fully-featured and highly customizable JavaScript data grid.
 It delivers [outstanding performance](https://www.ag-grid.com/example.php), has no 3rd party dependencies and [integrates smoothly with all major JavaScript frameworks](https://www.ag-grid.com/javascript-grid-getting-started). Here's how our grid looks like with multiple filters and grouping enabled:
 
-
+The community edition of AG Grid is absolutely free, even for commercial use.
 
 Features
 --------------
@@ -117,18 +137,7 @@ Usage Overview
 
 For more information on how to integrate the grid into your project see [TypeScript - Building with Webpack 2](https://www.ag-grid.com/ag-grid-typescript-webpack-2).
 
-Issue Reporting
-----------
-If you have found a bug, please report them at this repository `issues` section. If you're using Enterprise version please use the private ticketing system to do that.
 
-Asking Questions
--------------
-
-Look for similar problems on [StackOverflow](https://stackoverflow.com/questions/tagged/ag-grid) using the `ag-grid` tag. If nothing seems related, post a new message there. Do not use GitHub issues to ask questions.
-
-Contributing
-------------
-ag-Grid is developed by a team of co-located developers in London. If you want to join the team check out our [jobs listing](https://www.ag-grid.com/ag-grid-jobs-board) or send your application to info@ag-grid.com.
 
 License
 ------------------
