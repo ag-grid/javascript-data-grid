@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <script src="https://unpkg.com/ag-grid-enterprise/dist/ag-grid-enterprise.min.noStyle.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css"
+    />
+    <style media="only screen">
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      html {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        overflow: auto;
+      }
+
+      body {
+        padding: 1rem;
+        overflow: auto;
+      }
+    </style>
+    <title>Column Filters in Vanilla Js</title>
+  </head>
+  <body>
+    <button onclick="onBtnSave()">Save</button>
+    <button onclick="onBtnApply()">Apply</button>
+    <div
+      id="myGrid"
+      class="ag-theme-alpine"
+      style="height: 300px"
+    ></div>
+    <script src="/main.js"></script>
+  </body>
+</html>
