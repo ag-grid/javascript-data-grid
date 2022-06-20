@@ -14,6 +14,10 @@ And directly available below:
    - https://youtu.be/EIkxDliHFYw
 - 003 - Customizing Cells
    - https://youtu.be/NwLVitYQ9c4
+- 04 - Javascript Column Filters
+    - https://youtu.be/haGW168Mfog
+- Enterprise Row Grouping
+    - https://youtu.be/kM0RFOoPDXk   
 
 
 Source code for all videos is available on Github:

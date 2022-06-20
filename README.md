@@ -14,6 +14,8 @@ Demo of ag-Grid integration into a JavaScript project
 
 ## Getting Started Video Tutorial Series
 
+This video series covers AG Grid's Data Grid using Javascript. Using a step by step series of videos you will quickly learn AG Grid features and how to customize them for your project.
+
 Videos in this Series
 
 - 01 - Community Getting Started
@@ -24,6 +26,13 @@ Videos in this Series
     - https://youtu.be/NwLVitYQ9c4
 - 04 - Javascript Column Filters
     - https://youtu.be/haGW168Mfog
+- Enterprise Row Grouping
+    - https://youtu.be/kM0RFOoPDXk
+
+
+All videos are available in a playlist:
+
+https://www.youtube.com/playlist?list=PLsZlhayVgqNxijfRQxg5Mc6W4MzZHQ9MK
 
 Source code is available on Github:
 
