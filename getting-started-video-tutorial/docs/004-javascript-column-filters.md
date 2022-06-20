@@ -1,6 +1,6 @@
 # Column Filters
 
-In this video Marats Stelihs JavaScript Developer at AG Grid, provides an overview of the built-in column filters for AG Grid. This video uses the Javascript Data Grid. Columns can be filtered to allow the user to configure the data shown in the grid. Three filters are supplied with AG Grid community edition: text, number and date. An additional set and multi filter are available to the enterprise edition. The filters can also be configured through the API.
+An overview of the built-in column filters for AG Grid. This video uses the Javascript Data Grid. Columns can be filtered to allow the user to configure the data shown in the grid. Three filters are supplied with AG Grid community edition: text, number and date. An additional set and multi filter are available to the enterprise edition. The filters can also be configured through the API.
 
 ## Tutorial Video
 

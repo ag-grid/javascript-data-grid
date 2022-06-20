@@ -31,8 +31,8 @@ Source code is available on Github:
 
 ## What is AG Grid?
 
-ag-Grid is a fully-featured and highly customizable JavaScript data grid.
-It delivers [outstanding performance](https://www.ag-grid.com/example.php), has no 3rd party dependencies and [integrates smoothly with all major JavaScript frameworks](https://www.ag-grid.com/javascript-grid-getting-started). Here's how our grid looks like with multiple filters and grouping enabled:
+AG Grid is a fully-featured and highly customizable JavaScript data grid.
+It delivers [outstanding performance](https://www.ag-grid.com/example), has no 3rd party dependencies and [integrates smoothly with all major JavaScript frameworks](https://www.ag-grid.com/javascript-data-grid/getting-started/). Here's how our grid looks like with multiple filters and grouping enabled:
 
 The community edition of AG Grid is absolutely free, even for commercial use.
 
@@ -68,16 +68,11 @@ Here are some of the features that make ag-Grid stand out:
 * Pinned Rows
 * Full Width Rows
 
-\* The features marked with an asterisk are available in the [enterprise version](https://www.ag-grid.com/license-pricing.php) only.
+\* The features marked with an asterisk are available in the [enterprise version](https://www.ag-grid.com/license-pricing/) only.
 
 Check out [developers documentation](https://www.ag-grid.com/javascript-data-grid/) for a complete list of features or visit [our official docs](https://www.ag-grid.com/features-overview) for tutorials and feature demos. 
 
-Looking for a framework specific solution?
---------------
-* [Get Started with AngularJS](https://www.ag-grid.com/best-angularjs-data-grid)
-* [Get Started with Angular](https://www.ag-grid.com/angular-getting-started)
-* [Get Started with React](https://www.ag-grid.com/react-getting-started)
-* [Get Started with Vue](https://www.ag-grid.com/vue-getting-started)
+AG Grid is available for React, Angular, Vue and Javascript.
 
 
 Usage Overview
